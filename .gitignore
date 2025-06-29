@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Data & DB
+*.pkl
+*.db
+db/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Pyright or VSCode stuff
+.pyright/
+.vscode/
+
+# Logs
+*.log
+
+gcp_key.json

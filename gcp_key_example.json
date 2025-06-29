@@ -1,0 +1,9 @@
+{
+    "comment": "Replace all values with your actual GCP service account JSON key. Below is the example of how your gcp_key is going to look.",
+    "type": "service_account",
+    "project_id": "your-project-id",
+    "private_key_id": "your-private-key-id",
+    "private_key": "-----BEGIN PRIVATE KEY-----\\nYOUR_KEY_HERE\\n-----END PRIVATE KEY-----\\n",
+    "client_email": "your-service-account-email@gcp-project.iam.gserviceaccount.com",
+    "client_id": "your-client-id"
+}
