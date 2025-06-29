@@ -70,7 +70,7 @@ Below is a breakdown of key bugs found in the original code (debug-assignment.zi
 
 ```bash
 git clone https://github.com/NisargaKumar/Debugged-Blood-Health-Insight.git
-cd BLOOD_TEST_ANALYSIS
+cd Blood-Health-Insight
 ```
 
 ### 2. Set Up Python Environment
