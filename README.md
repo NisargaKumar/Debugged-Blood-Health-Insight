@@ -13,7 +13,7 @@ This repository contains the **final, working version** of the "Blood Test Analy
 - [Demo Video](#demo-video)
 - [Project Setup Notes](#project-setup-notes)
 - [API Documentation](#api-documentation)
-- 
+
 ---
 
 ## Bugs Found & Fixes Implemented
