@@ -1,4 +1,4 @@
-# Blood Test Analysis – AI-Powered Health Advisor
+# Blood Health Insights: AI-Powered Health Advisor
 
 This repository contains the **final, working version** of the "Blood Test Analysis" assignment. The application analyzes user-uploaded blood test reports (PDF format), identifies abnormal values, finds relevant research articles, and provides actionable health advice using LLM-powered agents.
 
