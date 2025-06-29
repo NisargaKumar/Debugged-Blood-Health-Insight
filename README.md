@@ -69,7 +69,7 @@ Below is a breakdown of key bugs found in the original code (debug-assignment.zi
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/cherry-1729-9090/BLOOD_TEST_ANALYSIS.git
+git clone https://github.com/cherry-1729-9090/BLOOD_TEST_ANALYSIS](https://github.com/NisargaKumar/Debugged-Blood-Health-Insight.git
 cd BLOOD_TEST_ANALYSIS
 ```
 
