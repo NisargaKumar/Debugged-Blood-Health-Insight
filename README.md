@@ -157,52 +157,11 @@ Watch the full walkthrough of the working Blood Test Analysis application:
 
 👉 [Click here to view the demo on Google Drive]\([https://drive.google.com/file/d/1a-0mNEsoCkZBa6sreH5U0IWecah-6FBR/view?usp=sharing](https://drive.google.com/file/d/1a-0mNEsoCkZBa6sreH5U0IWecah-6FBR/view?usp=sharing))
 
+
 ## Project Setup Notes
 
 * On the first run, the model will be trained using `train_agents.py`.
   The `.pkl` file is **not included** in the repository to keep it clean and lightweight.
 * Similarly, the `db/` folder is excluded from version control because it contains runtime-generated data (e.g., ChromaDB).
 * Refer to `.gitignore` for details on excluded files and directories.
-
----
-
-### .gitignore (Summary)
-
-```gitignore
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
-.venv/
-venv/
-ENV/
-env.bak/
-
-# Environment variables
-.env
-
-# VS Code / JetBrains
-.vscode/
-.idea/
-
-# OS-generated files
-.DS_Store
-Thumbs.db
-
-# Local DB and vector store
-/db/
-
-# Model checkpoints, pickles, and temp files
-*.pkl
-*.joblib
-*.sav
-
-# Logs and reports
-*.log
-
-# Misc
-*.sqlite3
-```
 
