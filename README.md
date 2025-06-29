@@ -181,7 +181,7 @@ BLOOD_TEST_ANALYSIS/
 
 Watch the full walkthrough of the working Blood Test Analysis application:
 
-👉 [Click here to view the demo on Google Drive]\([https://drive.google.com/file/d/1a-0mNEsoCkZBa6sreH5U0IWecah-6FBR/view?usp=sharing](https://drive.google.com/file/d/1a-0mNEsoCkZBa6sreH5U0IWecah-6FBR/view?usp=sharing))
+[Click here to view the demo on Google Drive](https://drive.google.com/file/d/1a-0mNEsoCkZBa6sreH5U0IWecah-6FBR/view?usp=sharing)
 
 
 ## Project Setup Notes
