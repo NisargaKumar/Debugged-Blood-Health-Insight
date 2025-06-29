@@ -2,6 +2,18 @@
 
 This repository contains the **final, working version** of the "Blood Test Analysis" assignment. The application analyzes user-uploaded blood test reports (PDF format), identifies abnormal values, finds relevant research articles, and provides actionable health advice using LLM-powered agents.
 
+## Table of Contents
+
+- [Bugs Found & Fixes Implemented](#bugs-found--fixes-implemented)
+- [Setup Instructions](#setup-instructions)
+- [Application Workflow](#application-workflow)
+- [Agent Details](#agent-details)
+- [Technologies Used](#technologies-used)
+- [Directory Structure](#directory-structure)
+- [Demo Video](#demo-video)
+- [Project Setup Notes](#project-setup-notes)
+- [API Documentation](#api-documentation)
+- 
 ---
 
 ## Bugs Found & Fixes Implemented
@@ -88,6 +100,20 @@ GOOGLE_APPLICATION_CREDENTIALS=./gcp_key.json
 
 > Ensure you have your Google Cloud and Serper credentials available before starting.
 
+### 🔐 How to Get Your `gcp_key.json`
+
+1. Go to: [https://console.cloud.google.com/](https://console.cloud.google.com/)
+2. Create a **new project** (or select an existing one).
+3. In the sidebar, go to **"IAM & Admin → Service Accounts"**.
+4. Click **"Create Service Account"**:
+   - Give it a name (e.g., `gemini-agent`)
+   - Click **Create and Continue**
+5. Assign the role: **Project → Editor** (or minimal roles like `Vertex AI User`)
+6. Click **Done**
+7. Click on the newly created service account → **"Keys" tab**
+8. Click **"Add Key → Create New Key" → Choose JSON → Create**
+9. It will download a file like `gcp_key.json`. Place it in your project root.
+
 ### 5. Run the Application
 
 ```bash
@@ -164,4 +190,32 @@ Watch the full walkthrough of the working Blood Test Analysis application:
   The `.pkl` file is **not included** in the repository to keep it clean and lightweight.
 * Similarly, the `db/` folder is excluded from version control because it contains runtime-generated data (e.g., ChromaDB).
 * Refer to `.gitignore` for details on excluded files and directories.
+
+## API Documentation
+
+This project currently uses **Streamlit** as the frontend.
+
+But an earlier version used **FastAPI** to expose the backend as APIs.
+
+### Available Endpoints (FastAPI Version)
+
+| Endpoint   | Method | Description                                          |
+| ---------- | ------ | ---------------------------------------------------- |
+| `/`        | GET    | Health check endpoint. Confirms if API is running.   |
+| `/analyze` | POST   | Upload PDF and get health analysis using LLM agents. |
+
+These were consolidated into a Streamlit frontend for simplicity and usability. However, this shows I have experience designing and exposing LLM-based APIs with structured input/output workflows.
+
+### Want to See a Full REST API Example?
+
+Check out my other project: **Invoice Reimbursement System**
+
+- GitHub: [https://github.com/NisargaKumar/Invoice-Reimbursment-Management](https://github.com/NisargaKumar/Invoice-Reimbursment-Management)
+- Demo Video: [https://www.tella.tv/video/nisargas-video-31hs](https://www.tella.tv/video/nisargas-video-31hs)
+
+This includes:
+
+- FastAPI endpoints like `/analyze/upload` and `/chatbot/query`
+- RAG pipeline with ChromaDB
+- Auto-generated docs available at `/docs`
 
